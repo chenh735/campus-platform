@@ -3,10 +3,7 @@
     <el-container>
       <el-header class="admin-header">
         <div class="header-left">
-          <span class="logo" @click="$router.push('/admin')">
-            <img class="logo-icon" src="/logo.svg" alt="" />
-            <span>管理后台</span>
-          </span>
+          <span class="logo" @click="$router.push('/admin')">管理后台</span>
         </div>
         <div class="header-center">
           <el-menu mode="horizontal" :default-active="activeMenu" @select="handleSelect" :ellipsis="false">
@@ -87,20 +84,11 @@ onMounted(async () => {
   flex-shrink: 0;
 }
 .logo {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
   font-size: 18px;
   font-weight: bold;
   color: #fff;
   cursor: pointer;
   margin-right: 20px;
-}
-.logo-icon {
-  width: 28px;
-  height: 28px;
-  flex: 0 0 auto;
-  border-radius: 8px;
 }
 .header-center {
   flex: 1;
