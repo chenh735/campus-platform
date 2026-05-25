@@ -1,0 +1,23 @@
+[package]
+name = "campus-platform"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+axum = { version = "0.7", features = ["multipart"] }
+tokio = { version = "1", features = ["full"] }
+sqlx = { version = "0.8", features = ["runtime-tokio", "tls-rustls", "mysql", "chrono"] }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+jsonwebtoken = "9"
+bcrypt = "0.16"
+uuid = { version = "1", features = ["v4"] }
+dotenvy = "0.15"
+tower-http = { version = "0.5", features = ["cors"] }
+redis = { version = "0.25", features = ["tokio-comp", "connection-manager"] }
+lettre = { version = "0.11", features = ["tokio1-native-tls", "builder"] }
+chrono = { version = "0.4", features = ["serde"] }
+mime_guess = "2"
+tracing = "0.1"
+tracing-subscriber = "0.3"
+rand = "0.8"

@@ -1,0 +1,29 @@
+# Rust
+backend/target/
+
+# Node
+frontend/node_modules/
+frontend/dist/
+
+# Environment config (contains secrets)
+.env
+!.env.example
+
+# Uploaded files
+uploads/
+backend/uploads/
+
+# Logs
+*.log
+
+# Local assistant/tool state
+.claude/
+
+# IDE
+.idea/
+*.iml
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db
